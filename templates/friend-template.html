@@ -1,0 +1,6 @@
+{%load i18n%}
+<output style='margin:2px' name=fid fid={{fid}}>
+<div><a href={%url 'profile' fid%}><img class=small src={%url 'avatar-member' fid%}></a></div>
+<div fid='{{fid}}' onclick='unfriend(this)'>{%trans 'Unfriend'%}</div>
+<div fid='{{fid}}' onclick='friendBlock(this)'>{%trans 'Block'%}</div>
+</output>

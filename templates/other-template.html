@@ -1,0 +1,4 @@
+{%load i18n%}
+<div><a href={%url 'profile' oid%}><img class=small src={%url 'avatar-member' oid%}></a></div>
+{#<div oid={{oid}} onclick='friendFollow(this)'>{%trans 'Follow'%}</div>#}
+<div oid={{oid}} onclick='friendInvoke(this)'>{%trans 'Add'%}</div>
